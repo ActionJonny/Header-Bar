@@ -1,0 +1,72 @@
+div {
+  display: flex;
+  justify-content: space-around;
+  background-color: #D1D2D3;
+  height: 100px;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img,
+nav,
+input,
+.menu {
+  margin: auto;
+}
+
+.menu {
+  display: none;
+}
+
+img {
+  margin-left: 25px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+input {
+  height: 25px;
+  background: url('./images/search.svg') no-repeat scroll 7px 4px;
+  padding-left: 40px;
+  border: 1px solid #666666;
+}
+
+@media only screen and (max-width: 650px) {
+  div {
+    height: auto;
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  nav,
+  input {
+    display: none;
+  }
+
+  img,
+  .menu {
+    position: absolute;
+  }
+
+  .img-menu {
+    position: relative;
+    height: 50px;
+  }
+
+  .menu {
+    margin-right: 25px;
+    display: block;
+    right: 0;
+  }
+
+  .is-active {
+    margin: 10px 15px;
+    display: block;
+  }
+
+  .nav {
+    margin-left: 30px;
+  }
+}
